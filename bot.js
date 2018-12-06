@@ -2567,7 +2567,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if(!message.channel.guild)return;
   if (!profile[message.author.id]) profile[message.author.id] = {
-    tite: 'Super User',
+    tite: 'Leader User',
     rep: 0,
     reps: 'NOT YET',
     lastDaily:'Not Collected',
@@ -2841,7 +2841,7 @@ message.channel.stopTyping()
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/35P4tNT**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/bfGN2yS**")
      
      
   message.channel.sendEmbed(embed);
@@ -2980,7 +2980,7 @@ var prefix = "-";
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
-    channel: "welcome"
+    channel: "chat"
 }
 const channel = sWlc[message.guild.id].channel
   if (message.content.startsWith(prefix + "setwelcomer")) {
@@ -2996,7 +2996,7 @@ const channel = sWlc[message.guild.id].channel
 
 client.on("guildMemberAdd", member => {
       if(!sWlc[member.guild.id]) sWlc[member.guild.id] = {
-    channel: "welcome"
+    channel: "chat"
   }
   const channel = sWlc[member.guild.id].channel
     const sChannel = sWlc[member.guild.id].channel

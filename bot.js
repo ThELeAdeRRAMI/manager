@@ -4,7 +4,8 @@ const client = new Discord.Client();
 const giphy = require('giphy-api')();    
 const googl = require('goo.gl'); 
 const translate = require('google-translate-api'); 
-const fs = require("fs");      
+const fs = require("fs"); 
+const ms = require('ms'); 
 const getYoutubeID = require('get-youtube-id'); 
 const moment = require("moment");  
 const { Client, Util } = require('discord.js');  
@@ -2560,8 +2561,6 @@ client.on('message', message => {
     }
 });
 
-const fs = require('fs'); // npm i fs
-const ms = require('ms'); // npm i ms
 const cool = [];
 hero.on('message',async message => {
   if(message.author.bot) return;

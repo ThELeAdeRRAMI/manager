@@ -2351,7 +2351,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("463450251525750796").send(
+client.users.get("464426497193803786").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2363,7 +2363,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : ! Fèarless | ThE_LeAdeR#9643  ")
+     .setFooter("By : ! FT | ThE_LeAdeR#7625  ")
                                                 
 
 message.channel.send(embed);
@@ -2567,7 +2567,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if(!message.channel.guild)return;
   if (!profile[message.author.id]) profile[message.author.id] = {
-    tite: 'Super User',
+    tite: 'Leader User',
     rep: 0,
     reps: 'NOT YET',
     lastDaily:'Not Collected',
@@ -2974,7 +2974,7 @@ Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
 client.on("guildDelete", guild => {
- client.channels.get("463450251525750796").send(`**Rmoved From server :x:
+ client.channels.get("464426497193803786").send(`**Rmoved From server :x:
 Server name: __${guild.name}__
 Server owner: __${guild.owner}__**`)
 });
@@ -2991,13 +2991,13 @@ Server owner: __${guild.owner}__**`)
 }); 
 			      
 const sWlc = {}
-const premium = ['463450251525750796', '', '', '']
+const premium = ['464426497193803786', '', '', '']
 client.on('message', message => {
 var prefix = "-";
 if(message.channel.type === "dm") return;
 if(message.author.bot) return;
   if(!sWlc[message.guild.id]) sWlc[message.guild.id] = {
-    channel: "chat"
+    channel: "welcome"
 }
 const channel = sWlc[message.guild.id].channel
   if (message.content.startsWith(prefix + "setwelcomer")) {
@@ -3013,7 +3013,7 @@ const channel = sWlc[message.guild.id].channel
 
 client.on("guildMemberAdd", member => {
       if(!sWlc[member.guild.id]) sWlc[member.guild.id] = {
-    channel: "chat"
+    channel: "welcome"
   }
   const channel = sWlc[member.guild.id].channel
     const sChannel = sWlc[member.guild.id].channel
